@@ -1,0 +1,122 @@
+[
+    {
+        "name": "John Doe",
+        "email": "john@example.com",
+        "password": "SecurePassword1",
+        "pic": "https://res.cloudinary.com/de2rges3m/image/upload/v1708320125/Lawq/Lawyers/businessman-with-hand-pocket_1098-54_hw1ihl.avif",
+        "age": 30,
+        "isVerified": true,
+        "category": "Technology",
+        "description": "Software Engineer with 5 years of experience",
+        "isMentor": true,
+        "rating": 0
+    },
+    {
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "password": "SecurePassword2",
+        "pic": "https://res.cloudinary.com/de2rges3m/image/upload/v1708320125/Lawq/Lawyers/front-view-smiley-woman-posing_23-2149429383_miu5qo.avif",
+        "age": 28,
+        "isVerified": true,
+        "category": "Business",
+        "description": "Entrepreneur running a successful startup",
+        "isMentor": true,
+        "rating": 0
+    },
+    {
+        "name": "Alice Johnson",
+        "email": "alice@example.com",
+        "password": "SecurePassword3",
+        "pic": "https://res.cloudinary.com/de2rges3m/image/upload/v1708320124/Lawq/Lawyers/smiling-business-man-sitting-empty-office-desk_1262-5631_dbtuj2.avif",
+        "age": 35,
+        "isVerified": true,
+        "category": "Art",
+        "description": "Painter specializing in abstract art",
+        "isMentor": true,
+        "rating": 0
+    },
+    {
+        "name": "Bob Williams",
+        "email": "bob@example.com",
+        "password": "SecurePassword4",
+        "pic": "https://res.cloudinary.com/de2rges3m/image/upload/v1708320125/Lawq/Lawyers/businesswoman-posing_23-2148142829_xlxdxr.avif",
+        "age": 32,
+        "isVerified": true,
+        "category": "Fitness",
+        "description": "Personal trainer helping clients achieve their fitness goals",
+        "isMentor": true,
+        "rating": 0
+    },
+    {
+        "name": "Emily Brown",
+        "email": "emily@example.com",
+        "password": "SecurePassword5",
+        "pic": "https://res.cloudinary.com/de2rges3m/image/upload/v1708320126/Lawq/Lawyers/businessman-black-suit-with-tie-posing_114579-15877_bnknzd.avif",
+        "age": 27,
+        "isVerified": true,
+        "category": "Education",
+        "description": "Teacher passionate about fostering creativity in students",
+        "isMentor": true,
+        "rating": 0
+    },
+    {
+        "name": "Michael Wilson",
+        "email": "michael@example.com",
+        "password": "SecurePassword6",
+        "pic": "https://res.cloudinary.com/de2rges3m/image/upload/v1708320125/Lawq/Lawyers/businesswoman-posing_23-2148142829_xlxdxr.avif",
+        "age": 40,
+        "isVerified": true,
+        "category": "Finance",
+        "description": "Financial advisor providing investment advice",
+        "isMentor": true,
+        "rating": 0
+    },
+    {
+        "name": "Sarah Taylor",
+        "email": "sarah@example.com",
+        "password": "SecurePassword7",
+        "pic": "https://res.cloudinary.com/de2rges3m/image/upload/v1708320124/Lawq/Lawyers/smiling-business-man-sitting-empty-office-desk_1262-5631_dbtuj2.avif",
+        "age": 25,
+        "isVerified": true,
+        "category": "Music",
+        "description": "Singer-songwriter performing at local venues",
+        "isMentor": true,
+        "rating": 0
+    },
+    {
+        "name": "David Martinez",
+        "email": "david@example.com",
+        "password": "SecurePassword8",
+        "pic": "https://res.cloudinary.com/de2rges3m/image/upload/v1708320125/Lawq/Lawyers/front-view-smiley-woman-posing_23-2149429383_miu5qo.avif",
+        "age": 33,
+        "isVerified": true,
+        "category": "Healthcare",
+        "description": "Doctor specializing in pediatric care",
+        "isMentor": true,
+        "rating": 0
+    },
+    {
+        "name": "Olivia Anderson",
+        "email": "olivia@example.com",
+        "password": "SecurePassword9",
+        "pic": "https://res.cloudinary.com/de2rges3m/image/upload/v1708320125/Lawq/Lawyers/businessman-with-hand-pocket_1098-54_hw1ihl.avif",
+        "age": 29,
+        "isVerified": true,
+        "category": "Fashion",
+        "description": "Fashion designer creating unique clothing pieces",
+        "isMentor": true,
+        "rating": 0
+    },
+    {
+        "name": "Daniel Garcia",
+        "email": "daniel@example.com",
+        "password": "SecurePassword10",
+        "pic": "https://res.cloudinary.com/de2rges3m/image/upload/v1708320125/Lawq/Lawyers/businessman-with-hand-pocket_1098-54_hw1ihl.avif",
+        "age": 31,
+        "isVerified": true,
+        "category": "Sports",
+        "description": "Athlete competing in marathons and triathlons",
+        "isMentor": true,
+        "rating": 0
+    }
+]

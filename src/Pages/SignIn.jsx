@@ -1,13 +1,39 @@
-import React from 'react'
+import React,{useState} from 'react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const SignIn = () => {
+  const navigate = useNavigate()
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+
+  const SubmitHandler = async(e) => {
+    e.preventDefault()
+    axios.post("http://localhost:5000/api/user/login", {
+      email:email,
+      password:password
+    })
+    .then(res => {
+      if(res.data.sucess){
+        // console.log(res)
+        localStorage.setItem("id", res.data.response._id)
+        localStorage.setItem('token', res.data.token)
+        localStorage.setItem('isMentor', res.data.response.isMentor)
+      }
+    })
+    .then(res => navigate("/"))
+    .catch(err => {
+      alert("Incorrect Email or Password")
+    })
+  }
+
   return (
     <div className="flex items-center justify-center h-screen bg-blue-100">
       <div className="mx-auto w-full sm:w-full max-w-[90%] bg-white rounded-lg shadow-2xl md:flex">
         {/* Left side image */}
         <div className="md:w-1/2 p-4 bg-blue-100">
           <img
-            src="https://cdni.iconscout.com/illustration/premium/thumb/creative-programmer-10216066-8266096.png?f=webp"
+            src="https://res.cloudinary.com/de2rges3m/image/upload/v1696703380/Chat%20App/Home%20Page/13_enkavg.png"
             alt="Login Image"
             className="object-cover w-full h-full rounded-lg"
           />
@@ -15,14 +41,14 @@ const SignIn = () => {
         {/* Right side login form */}
         <div className="md:w-1/2 p-4 flex flex-col items-center justify-center">
           <h2 className="text-3xl font-semibold mb-4">Login</h2>
-          <form className="space-y-4 w-[70%]">
+          <form onSubmit={SubmitHandler} className="space-y-4 w-[70%]">
             <div>
               <label htmlFor="username" className="block text-gray-700 font-medium ">Username or email</label>
-              <input type="text" id="username" name="username" className="form-input  w-full px-4 py-2  mt-1 border border-gray-300 rounded-md shadow-sm" />
+              <input onChange={(e) => setEmail(e.target.value)} type="text" name="username" className=" w-full px-4 py-2  mt-1 border border-gray-300 rounded-md shadow-sm" />
             </div>
             <div>
               <label htmlFor="password" className="block text-gray-700 font-medium">Password</label>
-              <input type="password" id="password" name="password" className="form-input w-full px-4 py-2  mt-1 border  border-gray-300 rounded-md shadow-sm " />
+              <input onChange={(e) => setPassword(e.target.value)} type="password" name="password" className="w-full px-4 py-2  mt-1 border  border-gray-300 rounded-md shadow-sm " />
             </div>
            <p className='text-right text-green-700 underline cursor-pointer '>Forgot password?</p>
             <button type="submit" className="w-full bg-black hover:bg-black-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
